@@ -585,7 +585,7 @@ const ReadMore = ({
       </TextComponent>
       {/* See more component */}
       {seeMore && collapsed && afterCollapsed && (
-        <View style={seeMoreContainerStyle} onLayout={onSeeMoreViewLayout}>
+       <View style={[seeMoreContainerStyle,{position:'relative'}]} onLayout={onSeeMoreViewLayout}>
           {!hideEllipsis && (
             <TextComponent
               key={`${isMeasured}-${hideEllipsis}`}
